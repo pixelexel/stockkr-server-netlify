@@ -154,7 +154,7 @@ router.get("/details", (req, res) => {
       })
     )
     .catch(function (error) {
-      res.json("invalid_ticker");
+      res.json("invalid ticker symbol");
       console.log(error);
     });
 });
