@@ -10,8 +10,8 @@ app.use(cors());
 app.options("*", cors());
 app.use(express.json());
 
-const TIINGO_TOKEN = "process.env.TIINGO_KEY"; // Your Tiingo key
-const NEWS_TOKEN = "process.env.NEWS_API_KEY"; //Your News API key
+const TIINGO_TOKEN = process.env.TIINGO_KEY; // Your Tiingo key
+const NEWS_TOKEN = process.env.NEWS_API_KEY; //Your News API key
 
 router.get("/autocomplete", (req, res) => {
   query = req.query.search;
