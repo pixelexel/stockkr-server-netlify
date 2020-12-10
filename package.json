@@ -1,0 +1,26 @@
+{
+  "name": "stock",
+  "version": "1.0.0",
+  "description": "stock search",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "./node_modules/.bin/netlify-lambda serve src",
+    "build": "./node_modules/.bin/netlify-lambda build src"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.20.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "netlify-lambda": "^2.0.1",
+    "serverless-http": "^2.6.0"
+  },
+  "devDependencies": {
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-zip": "^5.0.2",
+    "nodemon": "^2.0.5"
+  }
+}
